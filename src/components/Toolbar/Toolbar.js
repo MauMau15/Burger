@@ -4,8 +4,10 @@ import Logo from '../../components/Logo/Logo';
 import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
 const toolbar = props => (
     <header className={classes.Toolbar}>
-        <div>menu</div>
-        <Logo></Logo>
+        <div onClick={props.menuOpened}>menu</div>
+        <div className={classes.Logo}>
+            <Logo></Logo>
+        </div>
         <nav>
             <NavigationItems></NavigationItems>
         </nav>
